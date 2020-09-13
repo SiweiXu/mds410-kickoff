@@ -11,7 +11,7 @@
 	<title>Home - Community Garden</title>
 </head>
 
-<body onresize="checkWindowsWidth()" style="background-color: #faf8ed;">
+<body onresize="checkWindowsWidth()">
     <div id="nav">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="./index.html">
@@ -26,9 +26,9 @@
             <div id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./index.html" style="font-weight: bold;">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="./tomato.html">Tomato <span class="sr-only">(current)</span></a>
                 </li>
                 </ul>
@@ -43,57 +43,93 @@
 
     <div id="contents" style="margin-left: 40px; margin-right: 40px; margin-top: 20px; display: flex;">
 
-        <div id="vertical-nav" style="width: 20%; height: 400px; display: inline-block; border-right-style: solid; border-right-color: #8f9294;">
+        <div id="vertical-nav" style="width: 20%; height: 100%; display: inline-block; border-right-style: solid; border-right-color: #8f9294;">
             <nav class="nav flex-column" style="top: 0px; left: 0px; right: 5px;">
+                <a class="nav-link active" href="#links">Quick links</a>
                 <a class="nav-link active" href="#what-is-it">What is tomato?</a>
                 <a class="nav-link active" href="#where-from">Where do tomatoes come from?</a>
                 <a class="nav-link active" href="#nutri-facts">Nutritional facts</a>
                 <a class="nav-link active" href="#used-for-what">What can they be used for?</a>
                 <a class="nav-link active" href="#recipes">Recipes</a>
-                <a class="nav-link active" href="#links">Links to more information</a>
             </nav>
         </div>
         
         <div style="width: 60%; display: inline-block; margin-left: 8%;">
+            <div id="links">
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Quick links</h3>
+
+                <div class="card-columns">
+                    <div class="card">
+                        <img class="card-img-top" src="../asset/tomato-recipe.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <a href="https://www.loveandlemons.com/fresh-tomato-recipes/">
+                              <h5 class="card-title">50 Fresh Tomato Recipes</h5>
+                          </a>
+                          <p class="card-text">I hope you’re also cooking with tomatoes like crazy right now, while they’re tangy, juicy, and sweet. In case you’re looking for some new tomato recipes, I’m sharing 50 of my favorites.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                      <img class="card-img-top" src="../asset/tell-ripe-tomato.jpg" alt="Card image cap">
+                      <div class="card-body">
+                        <a href="https://harvesttotable.com/tomato-ripening-tips-season-end/#:~:text=Tomatoes%20ripen%20from%20the%20inside,to%20know%20the%20harvest%20time.)">
+                            <h5 class="card-title">How Do I Know When My Tomatoes Are Ripe?</h5>
+                        </a>
+                        <p class="card-text">Tomatoes ripen from the inside out. To know a tomato is ripe let the skin turn red (if the variety is a red one) and you will know the fruit is ripe.</p>
+                      </div>
+                    </div>
+
+                    <div class="card">
+                        <img class="card-img-top" src="../asset/tomato-nutrition.jpg" alt="Card image cap">
+                        <div class="card-body">
+                          <a href="https://www.healthline.com/nutrition/foods/tomatoes">
+                              <h5 class="card-title">Tomatoes 101: Nutrition Facts and Health Benefits</h5>
+                          </a>
+                          <p class="card-text">Tomatoes are the major dietary source of the antioxidant lycopene, which has been linked to many health benefits, including reduced risk of heart disease and cancer.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <br/>
+            </div>
+
+
             <div id="what-is-it">
-                <h3>What is it?</h3>
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">What is tomato?</h3>
                 <p>111</p>
                 <figure>
                     <img src="../asset/tomatoes_ripe_or_not.jpg" width="60%" style="display: block; margin-left: auto; margin-right: auto;"/>
-                    <figcaption class="text-center">Fig.1 - The process of a tomato becoming ripe.</figcaption>
+                    <figcaption class="text-center" style="font-style: italic;">Fig.1 - The process of a tomato becoming ripe, from left to right</figcaption>
                 </figure>
                 <br/>
             </div>
 
             <div id="where-from">
-                <h3>Where do tomatoes come from?</h3>
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Where do tomatoes come from?</h3>
                 <p>111</p>
                 <br/>
             </div>
 
             <div id="nutri-facts">
-                <h3>Nutritional facts</h3>
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Nutritional facts</h3>
                 <p>111</p>
                 <br/>
             </div>
 
             <div id="used-for-what">
-                <h3>What can they be used for?</h3>
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">What can they be used for?</h3>
                 <p>111</p>
                 <br/>
             </div>
 
             <div id="recipes">
-                <h3>Recipes</h3>
+                <h3 style="font-family: Georgia, 'Times New Roman', Times, serif;">Recipes</h3>
                 <p>111</p>
                 <br/>
             </div>
 
-            <div id="links">
-                <h3>Links to More Information</h3>
-                <p>111</p>
-                <br/>
-            </div>
+            
         </div>
 
 
